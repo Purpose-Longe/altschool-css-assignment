@@ -1,0 +1,712 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F9FAFB;
+    color: #222;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2563EB;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 1rem;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons .login {
+    color: #2563EB;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-buttons .signup {
+    background-color: #2563EB;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero .highlight {
+    color: #2563EB;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.cta-buttons {
+    margin-top: 25px;
+}
+
+.btn-primary {
+    background: #2563EB;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.btn-secondary {
+    color: #2563EB;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Features Section */
+.features {
+    padding: 50px;
+    text-align: center;
+}
+
+.feature-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.feature-stats div h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+}
+
+.feature-stats div h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color:black;
+}
+
+.feature-stats div h3 span{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #2563EB;
+}
+
+.why-choose {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    gap: 40px;
+}
+
+.why-choose-text {
+    flex: 1;
+    text-align: left;
+}
+
+.why-choose h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.why-choose h2 span {
+    color: #2563EB;
+}
+
+.why-choose p {
+    font-size: 1rem;
+    color: #444;
+    max-width: 500px;
+}
+
+/* Feature Cards - 2x2 Grid */
+.feature-cards {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Feature Box */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+
+
+/* Pricing Section */
+.pricing {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pricing h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.fade-line {
+    display: inline-block;
+    width: 5px;
+    height: 25px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+    margin-right: 5px;
+}
+
+.highlight {
+    color: #2160FF;
+    font-weight: bold;
+}
+
+.pricing-subtitle {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    max-width: 600px;
+    margin: 10px auto 30px;
+}
+
+/* Pricing Cards */
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.pricing-card h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-card ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+#professionalprice{
+    color: white;
+}
+
+/* Checkmark Icons */
+.checkmark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #2A6FF7; 
+    border-radius: 50%;
+    background-color: white; 
+    color: #2A6FF7; 
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+/* Professional Plan Special Styling */
+.professional {
+    background: #0d1b2a;
+    color: white;
+}
+
+/* CTA Buttons */
+.pricing-buttons {
+    margin-top: 30px;
+}
+
+.pricing-buttons a {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-outline {
+    color: #2160FF;
+    border: 2px solid #2160FF;
+}
+
+.btn-outline:hover {
+    background: #2160FF;
+    color: white;
+}
+
+.btn-primary {
+    background: #2160FF;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #0044cc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* URL Shortener Form */
+.url-shortener {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+
+}
+
+input, select {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #146EF6;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #125ACC;
+}
+
+/* Style the SVG scissors icon */
+button svg {
+    margin-left: 8px;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    fill: white;
+}
+
+.terms {
+    font-size: 14px;
+    color: #a5a5a5;
+    text-align: center;
+}
+
+.terms a {
+    color: #146EF6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* FAQ Section */
+.faq-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.faq-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Black Divider before 'FAQs' */
+.faq-divider {
+    width: 5px;
+    height: 40px;
+    background: black;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* FAQ Container */
+.faq-container {
+    border-top: 1px solid #ddd;
+}
+
+/* FAQ Item Styling */
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.faq-question {
+    background: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq-icon {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #444;
+}
+
+/* FAQ Checkbox (Hidden) */
+.faq-item input {
+    display: none;
+}
+
+/* Show Answer When Checkbox is Checked */
+.faq-item input:checked + .faq-question + .faq-answer {
+    display: block;
+}
+
+/* Change the plus (+) to minus (-) when checked */
+.faq-item input:checked + .faq-question .faq-icon::after {
+    content: "-";
+}
+
+/* Call to Action */
+.cta {
+    background: #0B1727;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #f3f4f6, #e6f0fb);
+    padding: 50px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px 20px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .feature-stats {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        .why-choose {
+            text-align: center;
+            padding: 20px;
+        }
+    
+        .why-choose h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+    
+        .why-choose p {
+            font-size: 0.9rem;
+            max-width: 90%;
+        }
+    }
+    .feature-cards {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-section {
+        padding: 30px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .faq-section {
+        padding: 20px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+    }
+
+    .feature-stats div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .feature-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing h2 {
+        font-size: 1.5rem;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+    }
+
+    .pricing-card {
+        width: 100%;
+    }
+
+    .faq-title {
+        font-size: 1.2rem;
+    }
+
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+}

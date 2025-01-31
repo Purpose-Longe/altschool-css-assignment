@@ -1,0 +1,168 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+header img {
+    width: 250px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.account-btn {
+    padding: 8px 16px;
+    border: 1px solid black;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Checkout Section */
+.checkout-container {
+    display: flex;
+    max-width: 900px;
+    margin: 30px auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Checkout Form */
+.checkout-form {
+    flex: 2;
+    background: white;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    align-items: center;
+}
+
+.number-circle {
+    background: white;
+    color: #3B82F6;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 10px;
+    outline: 3px solid #3B82F6;
+}
+
+/* Form Fields */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #5A5A5A;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E0E0E0;
+    background: #F5F7FA;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Readonly Input */
+input[readonly] {
+    color: #A0AEC0;
+}
+
+/* Credit Card Fields */
+.credit-card-container {
+    display: flex;
+    gap: 10px;
+}
+
+.credit-card-container input {
+    flex: 1;
+}
+
+/* Buy Button */
+.buy-btn {
+    width: 100%;
+    background: #007A5E;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Pricing Summary */
+.pricing-summary {
+    flex: 1;
+    background: #0056A5;
+    color: white;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.switch-plan a {
+    color: white;
+    text-decoration: underline;
+}
+
+.testimonial {
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.customer img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+

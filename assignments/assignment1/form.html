@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Form - Assignment 1</title>
+    <link rel="stylesheet" href="assignment1.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="form.html">AltSchool Form</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>AltSchool Africa Application Form</h2>
+        <form action="#" method="POST">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" placeholder="Enter your country" required>
+
+            <label for="school">School of Interest:</label>
+            <select id="school" name="school" required>
+                <option value="" disabled selected>Select your school</option>
+                <option value="engineering">School of Engineering</option>
+                <option value="data">School of Data</option>
+                <option value="business">School of Business</option>
+                <option value="product">School of Product</option>
+            </select>
+
+            <label for="why">Why do you want to join AltSchool?</label>
+            <textarea id="why" name="why" rows="4" placeholder="Tell us why you want to join AltSchool..." required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>📍 Lagos, Nigeria</p>
+        <p>© 2024 Purpose Longe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
