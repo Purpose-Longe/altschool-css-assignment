@@ -1,9 +1,9 @@
-/* Reset */
+/* Reset & Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive, Arial, sans-serif; /* Ensuring consistency across devices */
 }
 
 /* Background */
@@ -31,6 +31,7 @@ nav ul {
     justify-content: center;
     gap: 15px;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -77,6 +78,20 @@ td {
     background: rgba(255, 255, 255, 0.8);
 }
 
+/* Responsive Table */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        font-size: 1rem;
+        padding: 8px;
+    }
+}
+
 /* Footer */
 footer {
     margin-top: 30px;
@@ -118,12 +133,69 @@ audio, video {
     border-radius: 10px;
 }
 
+/* Responsive Video */
 video {
-    height: 500px;
+    height: auto;
+    max-height: 500px;
 }
 
-/* Embedded Content */
+/* Embedded Content (YouTube, Maps, etc.) */
 iframe {
     border-radius: 10px;
     border: 3px solid #ff5f9e;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
 }
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    video, iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Small Screen Fixes */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
