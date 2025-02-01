@@ -6,42 +6,45 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Outer Gray Container */
+/* Outer Container */
 .outer-container {
     background: linear-gradient(to bottom, #ddd 85%, #ccc);
-    width: 620px;
+    width: 90%;
+    max-width: 620px;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    margin: 100px auto;
+    margin: 10vh auto;
 }
 
-/* Inner Gray Container */
+/* Inner Container */
 .inner-container {
     background: rgb(245, 240, 240);
-    border-bottom-width: 650px;
+    width: 100%;
     padding-bottom: 10px;
 }
 
 /* Black Background Box */
 .black-box {
     background: black;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: 350px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 5%;
 }
 
 /* White Card */
 .card {
     background: white;
-    width: 400px;
-    height: 210px;
-    padding: 70px 30px 10px 30px;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    padding: 60px 20px 15px;
     border-radius: 10px;
     font-weight: 500;
     text-align: left;
@@ -53,14 +56,58 @@
 .heading {
     background: #f81d8b;
     color: black;
-    font-size: 1.4rem;
-    font-weight: 1000;
-    padding: 12px 75px;
-    width: 85%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 50px;
+    width: auto;
+    max-width: 85%;
     margin: 0 auto;
     position: absolute;
-    top: -18px;
+    top: -15px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 3px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .black-box {
+        height: auto;
+        padding-left: 0;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 50px 15px 15px;
+    }
+
+    .heading {
+        font-size: 1rem;
+        padding: 8px 40px;
+        top: -12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .outer-container {
+        margin: 5vh auto;
+    }
+
+    .black-box {
+        padding: 15px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 40px 10px 10px;
+    }
+
+    .heading {
+        font-size: 0.9rem;
+        padding: 6px 30px;
+        top: -10px;
+    }
 }
