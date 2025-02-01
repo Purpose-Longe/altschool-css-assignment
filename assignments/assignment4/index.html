@@ -3,33 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huckleberry | Assignment 4</title>
+    <title>Sign Up | For Individuals</title>
     <link rel="stylesheet" href="assignment4.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Huckleberry</h1>
-    </header>
-
-    <section class="hero">
-        <p>An avant-garde agency focused on connecting <span class="highlight">passion</span> with <span class="highlight">logistics.</span></p>
-        <p>A better way to solve the problems of tomorrow.</p>
-    </section>
-
-    <section class="content">
-        <div class="content-box">
-            <div class="highlight-bar">Wealth comes from operations</div>
-            <p>No modern business can thrive without developing a specialization in operations. 
-                Huckleberry has helped dozens of companies, from Fortune 50 monoliths to fast-growing Bay Area startups, 
-                achieve their goals and meet their KPIs by leveraging our extensive network of logistics experts.</p>
-            <p>Huckleberry was established in 2003 to help ambitious businesses discover their true potential. 
-                If that resonates, let's chat!</p>
+    <div class="container">
+        <div class="left-section">
+            <img src="images/logo.png" alt="Company Logo" class="logo">
+            <h1>For Individuals</h1>
+            <p>Inspiring wholesome harmony for the mind, body, and spirit, for everyone, everywhere.</p>
         </div>
-    </section>
+
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Enter your first name">
+                </div>
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Enter your last name">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select>
+                        <option value="" disabled selected>Select here</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Weight (KG)</label>
+                    <input type="text" placeholder="Enter Weight">
+                </div>
+                <div class="form-group">
+                    <label>Height (CM)</label>
+                    <input type="text" placeholder="Enter height here..">
+                </div>
+                <div class="form-group">
+                    <label>Activity Level</label>
+                    <select>
+                        <option value="" disabled selected>Select here</option>
+                        <option value="sedentary">Sedentary (Little to no exercise)</option>
+                        <option value="light">Light Activity (1-3 days per week)</option>
+                        <option value="moderate">Moderate Activity (3-5 days per week)</option>
+                        <option value="active">Active (6-7 days per week)</option>
+                        <option value="athlete">Athlete (Highly intense daily workouts)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password">
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+
+            <p class="terms">By clicking Register, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>.</p>
+        </div>
+    </div>
 
 </body>
 </html>
-
 

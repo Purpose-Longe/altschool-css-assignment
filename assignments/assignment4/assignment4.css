@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset & Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,70 +6,141 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* General Styling */
+/* Layout */
 body {
-    background: #ffffff;
-    color: #333;
+    background: #F6FAF9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     padding: 20px;
 }
 
-/* Header */
-header {
-    font-size: 2rem;
+/* Container */
+.container {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    padding: 40px;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-section .logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.left-section h1 {
+    font-size: 1.8rem;
     font-weight: bold;
-    padding: 20px 0;
 }
 
-/* Hero Section */
-.hero {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    line-height: 1.5;
+.left-section p {
+    color: #666;
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
-.hero .highlight {
-    font-weight: bold;
-    color: #008000;
-}
-
-/* Content Section */
-.content {
-    background: #666;
-    margin-top: 40px;
-    padding: 40px 0;
-}
-
-.content-box {
+/* Right Section */
+.form-container {
+    flex: 1;
     background: white;
     padding: 30px;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.highlight-bar {
-    background: #FFC107;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
+}
+
+/* Label & Input Fields */
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* Register Button */
+.register-btn {
+    grid-column: span 2;
+    width: 100%;
+    background: #20C997;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background: #17a589;
+}
+
+/* Terms & Privacy Policy */
+.terms {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.terms a {
+    color: #20C997;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .content-box {
-        width: 90%;
+    body {
+        display: block;
+        padding: 20px;
+        height: auto;
     }
-}
 
-@media (max-width: 480px) {
-    .hero {
-        font-size: 1rem;
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
     }
-    .content-box {
-        width: 95%;
+
+    .left-section {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .form-container {
+        width: 100%;
     }
 }
 
